@@ -4,7 +4,7 @@ public class Main {
         System.out.println(add(5, 3));          // Output: 8
         System.out.println(subtract(5, 3)); // Output: 2
         System.out.println(multiply(5, 3)); // Output: 15
-        System.out.println(factorial(5));     // Output: 120    
+        System.out.println(factorial(5));     // Output: 120
     }
 
     /**
@@ -12,7 +12,7 @@ public class Main {
      */
     public static int add(int a, int b) {
         // your code here
-        return 0;
+        return a+b;
     }
 
     /**
@@ -20,7 +20,7 @@ public class Main {
      */
     public static int subtract(int a, int b) {
         // your code here
-        return 0;
+        return a-b;
     }
 
     /**
@@ -28,14 +28,17 @@ public class Main {
      */
     public static int multiply(int a, int b) {
         // your code here
-        return 0;
+        return a*b;
     }
 
     /**
      * TODO: Write a method to calculate the factorial of a number.
      */
     public static int factorial(int n) {
-        // your code here
-        return 0;
+        int result = 1;
+        for (int i = 2; i <= n; i++) {
+            result = result * i;
+        }
+        return result;
     }
 }
